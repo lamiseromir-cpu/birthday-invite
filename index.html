@@ -17,6 +17,14 @@
       min-height: 100vh;
     }
 
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
     .card {
       background: rgba(255, 255, 255, 0.12);
       border-radius: 20px;
@@ -74,8 +82,11 @@
 </head>
 <body>
   <div class="card">
+    <div style="position:relative;margin-bottom:12px;"><img src="birthday_hat_guy.jpg" style="width:100%;border-radius:14px;"><div style="position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.6);padding:6px 10px;border-radius:10px;font-size:0.9rem;">Me, having no plan but maximum vibes 🎉</div></div>
+    <div style="position:relative;margin-bottom:15px;"><img src="shy_kid.jpg" style="width:100%;border-radius:14px;"><div style="position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.6);padding:6px 10px;border-radius:10px;font-size:0.9rem;">You reading this like 👀</div></div>
     <div class="emoji">🎂💙🥳</div>
-    <h1>You're Invited!</h1>
+    <h1>You're Invited! 🎉</h1>
+    <p style="font-style:italic;opacity:0.9">(You’re already mentally coming)</p>
     <p>
       It's my birthday and you're officially invited to go out and celebrate with me 🎉
     </p>
@@ -85,16 +96,24 @@
       If you wanna wear blue — go ahead 😎
     </div>
 
-    <button onclick="showMeme()">Click for a surprise 👀</button>
+    <button onclick="showMeme()">Click if you dare 👀</button>
 
     <div class="meme" id="meme">
-      "You are not allowed to say no."<br />
-      – Birthday Law, Article 1 😂
-    </div>
+        <img src="cat_knife.jpg" alt="cat meme" style="width:100%;border-radius:14px;margin-bottom:12px;" />
+        <p><strong>📜 Rule #1:</strong></p>
+        <p>You MUST come. No excuses.</p>
+        <p>❌ Don’t bring anything</p>
+        <p>✨ Just vibes & joy</p>
+        <p>🍔🥤 Food & drinks INCLUDED</p>
+        <p style="margin-top:12px;font-weight:bold;">“If you read this far, you’re already coming.” 😌</p>
+      </div>
   </div>
 
   <script>
     function showMeme() {
+      const meme = document.getElementById('meme');
+      meme.style.display = 'block';
+      meme.style.animation = 'shake 0.5s ease';
       document.getElementById('meme').style.display = 'block';
     }
   </script>
