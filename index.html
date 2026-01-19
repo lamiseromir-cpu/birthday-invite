@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Invited 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0d47a1, #42a5f5);
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 30px 25px;
+      max-width: 420px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .theme {
+      margin: 20px 0;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      font-size: 1.1rem;
+    }
+
+    button {
+      background: #ffffff;
+      color: #0d47a1;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .meme {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">🎂💙🥳</div>
+    <h1>You're Invited!</h1>
+    <p>
+      It's my birthday and you're officially invited to go out and celebrate with me 🎉
+    </p>
+
+    <div class="theme">
+      💙 <strong>Theme:</strong> BLUE 💙<br />
+      If you wanna wear blue — go ahead 😎
+    </div>
+
+    <button onclick="showMeme()">Click for a surprise 👀</button>
+
+    <div class="meme" id="meme">
+      "You are not allowed to say no."<br />
+      – Birthday Law, Article 1 😂
+    </div>
+  </div>
+
+  <script>
+    function showMeme() {
+      document.getElementById('meme').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
