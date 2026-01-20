@@ -4,104 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>You're Invited!</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: linear-gradient(135deg, #eaf7ff, #d0ebff);
-      font-family: 'Georgia', serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .letter-container {
-      background: white;
-      max-width: 600px;
-      padding: 32px;
-      border: 2px solid #5ca9dd;
-      border-radius: 16px;
-      box-shadow: 0 8px 25px rgba(0, 80, 160, 0.15);
-      text-align: center;
-    }
-
-    .cat-pic {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-      border-radius: 10px;
-      margin: 0 auto 24px;
-      display: block;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #005a99;
-      margin-bottom: 12px;
-      font-size: 2.1rem;
-    }
-
-    p, li {
-      color: #004070;
-      line-height: 1.6;
-      margin: 12px 0;
-      font-size: 1.05rem;
-    }
-
-    ul {
-      list-style: none;
-      margin: 20px 0;
-      padding: 0;
-    }
-
-    .rule {
-      font-weight: bold;
-      margin: 16px 0 8px;
-    }
-
-    .original-btn {
-      margin-top: 24px;
-      padding: 12px 24px;
-      background: #4da6ff;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-family: inherit;
-      font-weight: bold;
-      font-size: 1.05rem;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,80,160,0.2);
-    }
-
-    .original-btn:hover {
-      background: #2980ff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="letter-container">
-    <img src="cat.jpg" alt="Cat" class="cat-pic">
+    <div class="image-left">
+      <img src="left.jpg" alt="Left decoration" />
+    </div>
+    <div class="letter-content">
+      <h1>You're Invited!</h1>
+      <p>(You’re already mentally coming)</p>
+      <p>It's my birthday and you're officially invited to go out and celebrate with me</p>
 
-    <h1>You're Invited!</h1>
-    <p>(You’re already mentally coming)</p>
-    <p>It's my birthday and you're officially invited to go out and celebrate with me</p>
+      <div class="rule">
+        <strong>Rule #1:</strong><br>
+        You MUST come. No excuses.
+      </div>
 
-    <p class="rule">Rule #1:</p>
-    <p>You MUST come. No excuses.</p>
+      <ul class="details">
+        <li>❌ Don’t bring anything</li>
+        <li>✨ Just vibes & joy</li>
+        <li>Food & drinks INCLUDED</li>
+      </ul>
 
-    <ul>
-      <li>❌ Don’t bring anything</li>
-      <li>✨ Just vibes & joy</li>
-      <li>Food & drinks INCLUDED</li>
-    </ul>
+      <p class="final-note">“If you read this far, you’re already coming.”</p>
 
-    <button class="original-btn">If you read this far, you're already coming.</button>
+      <!-- Extra Buttons -->
+      <div class="button-group">
+        <button class="btn">RSVP Now</button>
+        <button class="btn">Get Directions</button>
+        <button class="btn">See Photos</button>
+        <button class="btn">Gift Ideas</button>
+      </div>
+    </div>
+    <div class="image-right">
+      <img src="right.jpg" alt="Right decoration" />
+    </div>
   </div>
 </body>
 </html>
